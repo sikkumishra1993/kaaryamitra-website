@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Book Kaaryamitra household services." />
+  <title>Book a Service | Kaaryamitra</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head><body>
+<header id="top"><nav class="nav">
+  <a class="brand" href="/" aria-label="Kaaryamitra home"><span class="brand__mark">Kaaryamitra</span></a>
+  <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+  <div class="nav__links" id="navLinks">
+    <a href="/services/">Services</a>
+    <a href="/pricing/">Pricing</a>
+    <a href="/areas/">Areas</a>
+    <a href="/faq/">FAQ</a>
+    <a class="btn btn--small" href="/contact/">Book</a>
+  </div>
+</nav>
+<section class="section" style="padding-bottom:0"><div class="container">
+  <div class="section__head"><h2>Book a service</h2><p>We confirm slot and share estimate before work begins.</p></div>
+  <div class="grid grid--2">
+    <article class="card">
+      <h3>Fast booking</h3>
+      <p>WhatsApp or call for quick confirmation.</p>
+      <div class="hero__cta">
+        <a class="btn" href="https://wa.me/919000000000" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--ghost" href="tel:+91-90000-00000">Call</a>
+      </div>
+      <p style="color:var(--muted); font-weight:850">Support number: +91-90000-00000</p>
+    </article>
+    <article class="card">
+      <h3>What to share</h3>
+      <ul><li>Service type</li><li>City/area + landmark</li><li>Preferred date/time</li><li>Photos (optional)</li></ul>
+    </article>
+  </div>
+  <form class="form" action="mailto:contact@kaaryamitra.in" method="post" enctype="text/plain" style="margin-top:16px">
+    <div class="form__grid">
+      <label>Name <input name="name" required /></label>
+      <label>Mobile <input name="mobile" inputmode="tel" placeholder="10-digit mobile" required /></label>
+      <label>City <input name="city" placeholder="e.g., Pune" required /></label>
+      <label>Area <input name="area" placeholder="e.g., Baner" required /></label>
+      <label>Service
+        <select name="service" required>
+          <option value="">Select</option>
+          <option>Cleaning</option><option>Plumbing</option><option>Electrical</option><option>Carpentry</option><option>Handyman</option>
+        </select>
+      </label>
+      <label>Preferred slot <input name="slot" placeholder="e.g., Sun 11am" /></label>
+    </div>
+    <label>Details <textarea name="message" rows="5" placeholder="Describe the issue" required></textarea></label>
+    <button class="btn" type="submit">Send request</button>
+    <p class="form__note">This uses your email app. For fastest response, WhatsApp us.</p>
+  </form>
+</div></section></header>
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© <span data-year></span> Kaaryamitra. All rights reserved.</p>
+    <div class="footer__links">
+      <a class="footer__link" href="/privacy/">Privacy</a>
+      <a class="footer__link" href="/terms/">Terms</a>
+      <a class="footer__link" href="/faq/">FAQ</a>
+      <a class="footer__link" href="#top">Back to top</a>
+    </div>
+  </div>
+</footer>
+<script src="/script.js"></script>
+</body></html>
