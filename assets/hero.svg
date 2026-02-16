@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1200" viewBox="0 0 2000 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#810421"/>
+      <stop offset="1" stop-color="#2D3432"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="30%" cy="20%" r="60%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="2000" height="1200" fill="url(#bg)"/>
+  <rect width="2000" height="1200" fill="url(#glow)"/>
+  <g opacity="0.16" fill="#ffffff">
+    <circle cx="180" cy="240" r="170"/>
+    <circle cx="1750" cy="260" r="220"/>
+    <circle cx="1240" cy="980" r="260"/>
+  </g>
+  <g opacity="0.18" stroke="#ffffff" stroke-width="4" fill="none">
+    <path d="M120 860 C 420 740, 600 1020, 920 880" />
+    <path d="M1060 320 C 1320 220, 1540 420, 1840 300" />
+  </g>
+  <g fill="#ffffff" opacity="0.95" font-family="Arial, sans-serif">
+    <text x="110" y="160" font-size="66" font-weight="900">Kaaryamitra</text>
+    <text x="110" y="240" font-size="34" font-weight="700" opacity="0.92">Trusted household services</text>
+  </g>
+</svg>
