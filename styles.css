@@ -191,7 +191,7 @@ img {
    HERO
    ============================================ */
 .site-home-page-hero {
-    background: url('/assets/hero.svg') center/cover;
+    background: url('./assets/hero.svg') center/cover;
     background-color: #1a1a1a;
     min-height: 550px;
     display: flex;
@@ -462,11 +462,11 @@ img {
 }
 
 .rn-home-business {
-    background-image: url('/assets/callout-partner.svg');
+    background-image: url('./assets/callout-partner.svg');
 }
 
 .rn-home-careers {
-    background-image: url('/assets/callout-careers.svg');
+    background-image: url('./assets/callout-careers.svg');
 }
 
 .rn-home-business h2,

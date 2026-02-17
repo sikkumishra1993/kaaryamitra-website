@@ -1,20 +1,42 @@
+// Mobile menu toggle
 (() => {
-  const toggle = document.querySelector('.nav__toggle');
-  const links = document.querySelector('#navLinks');
-  if (toggle && links) {
+  const toggle = document.querySelector('#rnSiteHeaderNavButton');
+  const menu = document.querySelector('#rnSiteHeaderNavMenu');
+  
+  if (toggle && menu) {
     toggle.addEventListener('click', (e) => {
       e.preventDefault();
-      const open = links.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menu.classList.toggle('is-open');
     });
-    links.querySelectorAll('a').forEach((a) => {
-      a.addEventListener('click', () => {
-        links.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
+    
+    // Close menu when clicking a link
+    menu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('is-open');
       });
     });
   }
-  document.querySelectorAll('[data-year]').forEach((el) => {
-    el.textContent = String(new Date().getFullYear());
+  
+  // Update year
+  const yearEl = document.getElementById('currentYear');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+  
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href !== '#') {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+    });
   });
 })();

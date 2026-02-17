@@ -3,10 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="Kaaryamitra — reliable household services in India. Book cleaning, plumbing, electrical, carpentry and minor repairs." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />    <meta name="description" content="Kaaryamitra — reliable household services in India. Book cleaning, plumbing, electrical, carpentry and minor repairs." />
     <title>Kaaryamitra | Household Services</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body class="site-home-page">
@@ -82,7 +81,7 @@
                             <div class="rn-business">
                                 <div class="rn-wrapper">
                                     <div class="rn-image-wrapper">
-                                        <img src="/assets/cleaning.svg" alt="Cleaning Services" />
+                                        <img src="./assets/cleaning.svg" alt="Cleaning Services" />
                                     </div>                                    <div class="site-cms-text">
                                         Regular cleaning and deep cleaning for kitchens, bathrooms, and full homes.
                                     </div>
@@ -96,7 +95,7 @@
                             <div class="rn-business">
                                 <div class="rn-wrapper">
                                     <div class="rn-image-wrapper">
-                                        <img src="/assets/plumbing.svg" alt="Plumbing Services" />
+                                        <img src="./assets/plumbing.svg" alt="Plumbing Services" />
                                     </div>                                    <div class="site-cms-text">
                                         Leak fixes, installations, and troubleshooting by experienced technicians.
                                     </div>
@@ -110,7 +109,7 @@
                             <div class="rn-business">
                                 <div class="rn-wrapper">
                                     <div class="rn-image-wrapper">
-                                        <img src="/assets/electrical.svg" alt="Electrical Services" />
+                                        <img src="./assets/electrical.svg" alt="Electrical Services" />
                                     </div>                                    <div class="site-cms-text">
                                         Fans, lights, switches and basic electrical repair with safety checks.
                                     </div>
@@ -124,7 +123,7 @@
                             <div class="rn-business">
                                 <div class="rn-wrapper">
                                     <div class="rn-image-wrapper">
-                                        <img src="/assets/carpentry.svg" alt="Carpentry Services" />
+                                        <img src="./assets/carpentry.svg" alt="Carpentry Services" />
                                     </div>                                    <div class="site-cms-text">
                                         Door alignment, furniture assembly, small repairs and adjustments.
                                     </div>
@@ -138,7 +137,7 @@
                             <div class="rn-business">
                                 <div class="rn-wrapper">
                                     <div class="rn-image-wrapper">
-                                        <img src="/assets/handyman.svg" alt="Handyman Services" />
+                                        <img src="./assets/handyman.svg" alt="Handyman Services" />
                                     </div>                                    <div class="site-cms-text">
                                         Minor fixes, drilling, mounting, shelves and quick household help.
                                     </div>
@@ -152,7 +151,7 @@
                             <div class="rn-business">
                                 <div class="rn-wrapper">
                                     <div class="rn-image-wrapper">
-                                        <img src="/assets/hero.svg" alt="Monthly Plans" />
+                                        <img src="./assets/hero.svg" alt="Monthly Plans" />
                                     </div>                                    <div class="site-cms-text">
                                         Need recurring support? Ask for a monthly plan for societies/offices.
                                     </div>
@@ -240,29 +239,8 @@
                     <p>© <span id="currentYear"></span> Kaaryamitra. All rights reserved.</p>
                 </span>
             </div>
-        </div>
-    </footer>
+        </div>    </footer>
 
-    <script src="/script.js"></script>
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-        
-        // Mobile menu toggle
-        document.getElementById('rnSiteHeaderNavButton').addEventListener('click', function(e) {
-            e.preventDefault();
-            document.getElementById('rnSiteHeaderNavMenu').classList.toggle('is-open');
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
