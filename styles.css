@@ -2,11 +2,11 @@
    CSS VARIABLES
    ============================================ */
 :root {
-    --company-primary-color: #810421;
-    --company-secondary-color: #3d4643;
-    --company-primary-transparent-2: rgba(129, 4, 33, 0.2);
-    --company-primary-transparent-5: rgba(129, 4, 33, 0.5);
-    --company-primary-transparent-8: rgba(129, 4, 33, 0.8);
+    --company-primary-color: #4A90E2;
+    --company-secondary-color: #2C3E50;
+    --company-primary-transparent-2: rgba(74, 144, 226, 0.2);
+    --company-primary-transparent-5: rgba(74, 144, 226, 0.5);
+    --company-primary-transparent-8: rgba(74, 144, 226, 0.8);
     
     --text-color: #333;
     --text-light: #666;
@@ -385,27 +385,27 @@ img {
 
 /* Different colors for each service card */
 .rn-flex-item:nth-child(1) .rn-business {
-    background: #B8860B; /* Golden for Cleaning */
+    background: linear-gradient(135deg, #F7B731 0%, #F79F1F 100%); /* Vibrant Orange/Gold for Cleaning */
 }
 
 .rn-flex-item:nth-child(2) .rn-business {
-    background: #4169E1; /* Royal Blue for Plumbing */
+    background: linear-gradient(135deg, #5DADE2 0%, #3498DB 100%); /* Bright Blue for Plumbing */
 }
 
 .rn-flex-item:nth-child(3) .rn-business {
-    background: #6A0DAD; /* Purple for Electrical */
+    background: linear-gradient(135deg, #AF7AC5 0%, #8E44AD 100%); /* Light Purple for Electrical */
 }
 
 .rn-flex-item:nth-child(4) .rn-business {
-    background: #6B8E23; /* Olive Green for Carpentry */
+    background: linear-gradient(135deg, #52C234 0%, #27AE60 100%); /* Fresh Green for Carpentry */
 }
 
 .rn-flex-item:nth-child(5) .rn-business {
-    background: #008B8B; /* Teal for Handyman */
+    background: linear-gradient(135deg, #48C9B0 0%, #16A085 100%); /* Turquoise for Handyman */
 }
 
 .rn-flex-item:nth-child(6) .rn-business {
-    background: var(--company-primary-color); /* Maroon for Monthly Plans */
+    background: linear-gradient(135deg, #EC7063 0%, #E74C3C 100%); /* Coral Red for Monthly Plans */
 }
 
 .rn-wrapper {
