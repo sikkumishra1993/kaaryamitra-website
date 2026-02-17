@@ -240,6 +240,13 @@ img {
     opacity: 0.95;
 }
 
+.rn-home-lead-btn {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .rn-home-lead-btn-link {
     display: inline-block;
     padding: 14px 32px;
@@ -254,6 +261,17 @@ img {
     background: #5E0318;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(129, 4, 33, 0.3);
+}
+
+.rn-whatsapp-btn {
+    background: #25D366;
+    border: 2px solid #25D366;
+}
+
+.rn-whatsapp-btn:hover {
+    background: #128C7E;
+    border-color: #128C7E;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
 
 .rn-down-arrow-container {
