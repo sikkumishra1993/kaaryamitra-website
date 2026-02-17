@@ -147,7 +147,7 @@ img {
 }
 
 .rn-site-header-nav-menu li a.btn-nav:hover {
-    background: #5E0318;
+    background: #3498DB;
     color: #fff;
 }
 
@@ -203,7 +203,7 @@ img {
    ============================================ */
 .site-home-page-hero {
     background: url('./assets/hero.svg') center/cover;
-    background-color: #1a1a1a;
+    background-color: #f0f4f8;
     min-height: 550px;
     display: flex;
     flex-direction: column;
@@ -219,7 +219,7 @@ img {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.85) 0%, rgba(52, 152, 219, 0.75) 100%);
 }
 
 .rn-home-header,
@@ -269,9 +269,9 @@ img {
 }
 
 .rn-home-lead-btn-link:hover {
-    background: #5E0318;
+    background: #3498DB;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(129, 4, 33, 0.3);
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
 }
 
 .rn-whatsapp-btn {
