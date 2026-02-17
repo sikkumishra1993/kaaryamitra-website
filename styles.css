@@ -187,6 +187,17 @@ img {
     bottom: 0;
 }
 
+.rn-site-header-nav-menu a {
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.rn-site-header-nav-menu a:hover,
+.rn-site-header-nav-menu a.active {
+    color: var(--company-primary-color);
+}
+
 /* ============================================
    HERO
    ============================================ */
@@ -730,5 +741,913 @@ img {
     
     .site-cms-text {
         font-size: 1rem;
+    }
+}
+
+/* ============================================
+   SERVICE DETAIL PAGES
+   ============================================ */
+.service-hero {
+    background: linear-gradient(135deg, var(--company-primary-color) 0%, var(--company-secondary-color) 100%);
+    color: white;
+    padding: 80px 20px 60px;
+    text-align: center;
+}
+
+.service-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.service-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.service-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.service-main {
+    flex: 1;
+}
+
+.service-section {
+    margin-bottom: 3rem;
+}
+
+.service-section h2 {
+    font-size: 1.75rem;
+    color: var(--company-secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.service-feature {
+    padding: 1.5rem;
+    background: var(--bg-gray);
+    border-radius: 8px;
+    border-left: 4px solid var(--company-primary-color);
+}
+
+.service-feature h3 {
+    font-size: 1.25rem;
+    color: var(--company-primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.service-feature p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.service-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-list li {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.service-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--company-primary-color);
+    font-weight: bold;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.process-step {
+    text-align: center;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: var(--company-primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.process-step h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--company-secondary-color);
+}
+
+.issue-list {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.issue-item {
+    padding: 1.25rem;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.issue-item h4 {
+    font-size: 1.15rem;
+    color: var(--company-secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.task-item {
+    padding: 0.75rem 1rem;
+    background: var(--bg-gray);
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.service-cta {
+    background: linear-gradient(135deg, var(--company-primary-color) 0%, var(--company-secondary-color) 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.service-cta h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.service-cta p {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary, .btn-whatsapp {
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary {
+    background: white;
+    color: var(--company-primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--bg-gray);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: var(--company-primary-color);
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background: #20ba5a;
+    transform: translateY(-2px);
+}
+
+.service-sidebar {
+    position: sticky;
+    top: 100px;
+    align-self: start;
+}
+
+.sidebar-card {
+    background: var(--bg-gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-card h3 {
+    font-size: 1.25rem;
+    color: var(--company-secondary-color);
+    margin-bottom: 1rem;
+}
+
+.sidebar-card p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.sidebar-card strong {
+    display: block;
+    margin-top: 1rem;
+    color: var(--company-secondary-color);
+}
+
+.sidebar-card a {
+    color: var(--company-primary-color);
+    font-weight: 500;
+}
+
+.sidebar-card a:hover {
+    text-decoration: underline;
+}
+
+.service-links {
+    list-style: none;
+    padding: 0;
+}
+
+.service-links li {
+    margin-bottom: 0.75rem;
+}
+
+.service-links a {
+    display: block;
+    padding: 0.5rem 0;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.service-links a:hover {
+    color: var(--company-primary-color);
+}
+
+.sidebar-warning {
+    background: #fff3cd;
+    border-left: 4px solid #ff9800;
+}
+
+.safety-notice {
+    background: #fff3cd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #ff9800;
+}
+
+/* ============================================
+   SERVICES OVERVIEW PAGE
+   ============================================ */
+.page-hero {
+    background: linear-gradient(135deg, var(--company-primary-color) 0%, var(--company-secondary-color) 100%);
+    color: white;
+    padding: 80px 20px 60px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.page-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.services-why-choose {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.services-why-choose h2 {
+    font-size: 2rem;
+    color: var(--company-secondary-color);
+    margin-bottom: 3rem;
+}
+
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.why-item {
+    padding: 2rem;
+    background: var(--bg-gray);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.why-item:hover {
+    transform: translateY(-5px);
+}
+
+.why-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.why-item h3 {
+    font-size: 1.25rem;
+    color: var(--company-primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.services-cta {
+    background: linear-gradient(135deg, var(--company-primary-color) 0%, var(--company-secondary-color) 100%);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.services-cta h2 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.services-cta p {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.contact-main {
+    flex: 1;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-method {
+    text-align: center;
+    padding: 2rem;
+    background: var(--bg-gray);
+    border-radius: 8px;
+}
+
+.method-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-method h3 {
+    font-size: 1.25rem;
+    color: var(--company-secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.contact-method p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.contact-link {
+    display: inline-block;
+    color: var(--company-primary-color);
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin: 0.5rem 0;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.hours {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 1rem;
+}
+
+.contact-form-section {
+    background: var(--bg-gray);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.contact-form-section h2 {
+    font-size: 1.75rem;
+    color: var(--company-secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--company-secondary-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--company-primary-color);
+}
+
+.btn-submit {
+    padding: 14px 32px;
+    background: var(--company-primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: var(--company-secondary-color);
+    transform: translateY(-2px);
+}
+
+.form-note {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
+.contact-sidebar {
+    position: sticky;
+    top: 100px;
+    align-self: start;
+}
+
+.sidebar-link {
+    display: inline-block;
+    color: var(--company-primary-color);
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.sidebar-link:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   PRICING PAGE
+   ============================================ */
+.pricing-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto 3rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.pricing-tables {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.pricing-table {
+    background: var(--bg-gray);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.pricing-table h2 {
+    font-size: 1.75rem;
+    color: var(--company-secondary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--company-primary-color);
+}
+
+.pricing-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricing-table thead {
+    background: var(--company-secondary-color);
+    color: white;
+}
+
+.pricing-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.pricing-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.pricing-table tbody tr:hover {
+    background: white;
+}
+
+.pricing-notes {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: #fff3cd;
+    border-radius: 8px;
+    border-left: 4px solid #ff9800;
+}
+
+.pricing-notes h2 {
+    font-size: 1.5rem;
+    color: var(--company-secondary-color);
+    margin-bottom: 1rem;
+}
+
+.pricing-notes ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.pricing-notes li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.pricing-notes li::before {
+    content: "ℹ️";
+    position: absolute;
+    left: 0;
+}
+
+.pricing-cta {
+    background: linear-gradient(135deg, var(--company-primary-color) 0%, var(--company-secondary-color) 100%);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.pricing-cta h2 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.pricing-cta p {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+/* ============================================
+   AREAS PAGE
+   ============================================ */
+.areas-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto 3rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.areas-section {
+    margin: 3rem 0;
+}
+
+.areas-section h2 {
+    font-size: 2rem;
+    color: var(--company-secondary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.area-card {
+    background: var(--bg-gray);
+    padding: 2rem;
+    border-radius: 8px;
+    border-top: 4px solid var(--company-primary-color);
+}
+
+.area-card.coming-soon {
+    border-top-color: var(--text-muted);
+    opacity: 0.8;
+}
+
+.area-card h3 {
+    font-size: 1.5rem;
+    color: var(--company-secondary-color);
+    margin-bottom: 1rem;
+}
+
+.coming-soon-label {
+    display: inline-block;
+    background: var(--text-muted);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.area-list {
+    list-style: none;
+    padding: 0;
+    columns: 2;
+    column-gap: 1rem;
+}
+
+.area-list li {
+    padding: 0.4rem 0;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.area-list li::before {
+    content: "📍";
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+}
+
+.area-note {
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.expansion-section {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.expansion-section h2 {
+    font-size: 2rem;
+    color: var(--company-secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.expansion-cities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.expansion-city {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-gray);
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.expansion-note {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.check-availability {
+    margin: 4rem 0;
+    padding: 3rem 2rem;
+    background: var(--bg-gray);
+    border-radius: 12px;
+}
+
+.check-availability h2 {
+    font-size: 2rem;
+    color: var(--company-secondary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.check-availability > p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.availability-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.availability-method {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+}
+
+.availability-method h3 {
+    font-size: 1.25rem;
+    color: var(--company-secondary-color);
+    margin-bottom: 0.75rem;
+}
+
+.availability-method p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.partner-section {
+    margin: 4rem 0;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, var(--company-primary-color) 0%, var(--company-secondary-color) 100%);
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.partner-section h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.partner-section p {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+/* ============================================
+   RESPONSIVE - NEW PAGES
+   ============================================ */
+@media (max-width: 1024px) {
+    .service-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-sidebar,
+    .contact-sidebar {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-hero,
+    .page-hero {
+        padding: 60px 20px 40px;
+    }
+    
+    .service-title,
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .service-subtitle,
+    .page-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .service-grid,
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .btn-primary,
+    .btn-secondary,
+    .btn-whatsapp {
+        width: 100%;
+    }
+    
+    .contact-methods,
+    .availability-methods {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .areas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .area-list {
+        columns: 1;
+    }
+    
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .task-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-table {
+        padding: 1rem;
+    }
+    
+    .pricing-table table {
+        font-size: 0.9rem;
+    }
+    
+    .pricing-table th,
+    .pricing-table td {
+        padding: 0.75rem 0.5rem;
     }
 }
