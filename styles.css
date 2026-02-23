@@ -477,33 +477,47 @@ img {
 
 .rn-home-business,
 .rn-home-careers {
-    background-size: cover;
-    background-position: center;
+    background: #fff;
     min-height: 320px;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 40px;
-    color: #fff;
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+}
+
+.rn-home-business:hover,
+.rn-home-careers:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    transform: translateY(-8px);
 }
 
 .rn-home-business::before,
 .rn-home-careers::before {
     content: '';
     position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 100%);
+    top: 40px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.15;
     z-index: 1;
 }
 
-.rn-home-business {
+.rn-home-business::before {
     background-image: url('./assets/callout-partner.svg');
 }
 
-.rn-home-careers {
+.rn-home-careers::before {
     background-image: url('./assets/callout-careers.svg');
 }
 
@@ -518,6 +532,7 @@ img {
 .rn-home-careers h2 {
     font-size: 1.75rem;
     margin-bottom: 12px;
+    color: var(--text-dark);
 }
 
 .rn-home-business hr,
@@ -525,7 +540,7 @@ img {
     width: 50px;
     height: 3px;
     border: 0;
-    background: #fff;
+    background: var(--company-primary-color);
     margin-bottom: 16px;
 }
 
@@ -533,19 +548,20 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .rn-cta-text {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 0;
-    opacity: 0.95;
+    color: var(--text-light);
 }
 
 .rn-cta-arrow {
     font-size: 24px;
     margin-left: 16px;
+    color: var(--company-primary-color);
 }
 
 /* ============================================
