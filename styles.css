@@ -498,29 +498,6 @@ img {
     transform: translateY(-8px);
 }
 
-.rn-home-business::before,
-.rn-home-careers::before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    width: 80px;
-    height: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.15;
-    z-index: 1;
-}
-
-.rn-home-business::before {
-    background-image: url('./assets/callout-partner.svg');
-}
-
-.rn-home-careers::before {
-    background-image: url('./assets/callout-careers.svg');
-}
-
 .rn-home-business h2,
 .rn-home-careers h2,
 .rn-multiline-cta {
