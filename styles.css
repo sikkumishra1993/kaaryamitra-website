@@ -203,9 +203,9 @@ img {
    HERO
    ============================================ */
 .site-home-page-hero {
-    background: url('./assets/hero.svg') center/cover;
+    background: url('./assets/hero.svg') center/contain no-repeat;
     background-color: #f0f4f8;
-    min-height: 550px;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
